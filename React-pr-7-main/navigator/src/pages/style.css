@@ -1,0 +1,147 @@
+/* style.css */
+
+body {
+  font-family: 'Verdana', sans-serif; /* Changed font for a modern look */
+  background-color: #e9ecef; /* Light grey background for contrast */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px; /* Increased padding for more spacious feel */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+h2 {
+  color: #343a40;
+  margin-bottom: 25px; /* Increased space below heading */
+  font-size: 28px; /* Larger font size */
+  text-align: center; /* Center aligned */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px; /* More space below table */
+}
+
+table, th, td {
+  border: 1px solid #ced4da; /* Softer border color */
+}
+
+th, td {
+  padding: 15px; /* Increased padding */
+  text-align: left;
+  font-size: 18px; /* Larger font size */
+}
+
+th {
+  background-color: #007bff; /* Header color */
+  color: white;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  border: 1px solid #ced4da;
+  border-radius: 5px; /* More rounded corners */
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none; /* Removed outline on focus */
+}
+
+input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px; /* More comfortable button size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 18px; /* Slightly larger button font */
+}
+
+button:hover {
+  color: #0056b3;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+.fa-book {
+  font-size: 22px; /* Larger book icon */
+  color: #007bff;
+}
+
+.fa-book:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+.delete-icon {
+  font-size: 24px;
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  color: #c82333; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 24px; /* Slightly smaller on mobile */
+  }
+
+  input[type="text"], input[type="submit"] {
+    font-size: 15px; /* Slightly larger input size */
+  }
+
+  table {
+    font-size: 15px; /* Increased font size for readability */
+  }
+
+  th, td {
+    padding: 12px; /* Adjusted padding for mobile */
+  }
+}
